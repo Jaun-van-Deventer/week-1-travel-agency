@@ -53,3 +53,41 @@ h1, h2, h3 {
     line-height: 1.15;
     margin: 0;
 }
+
+/* ===== Header + Navigation ===== */
+
+.site-header {
+  padding: 1.25rem var(--page-pad); /* Keeps the side padding the same as the rest of the page and shrinks on small screens. */
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space);
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-ocean);
+}
+
+/* Lays out the <li> items in a row. The list-style, margin and padding lines remove the default bullets and indent of a <ul>. */
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+/* Vertical padding makes each link taller, so it is easier to tap on a phone */
+.nav-links a {
+    display: inline-block;
+    padding: 0.75rem 0;
+}
