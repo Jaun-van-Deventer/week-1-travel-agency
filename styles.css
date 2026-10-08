@@ -1,0 +1,55 @@
+/* ===== Variables ===== */
+
+:root {
+  --color-ocean: #0b4f6c;    /* main brand blue */
+  --color-sand: #f6efe4;     /* page background */
+  --color-sunset: #e8743b;   /* accent for buttons and the CTA band */
+  --color-ink: #1d2a33;      /* main text color */
+    --color-white: #ffffff;
+  --radius: 12px;            /* shared corner rounding for cards and buttons */
+  --space: 1rem;             /* shared gap size */
+    --page-pad: clamp(1rem, 5vw, 4rem);
+}
+
+/* Global box-sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Makes nav links glide to their section instead of jumping */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Base styles inherited by everything on the page */
+body {
+    margin: 0;                 /* removes the browser's default white edge */
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 1.0625rem;      /* slightly larger than default for readability */
+    line-height: 1.5;          /* comfortable spacing between lines of text */
+    color: var(--color-ink);
+    background: var(--color-sand);
+}
+
+/* Images can shrink to fit their container but never overflow it */
+img {
+    max-width: 100%;
+    height: auto;              /* keeps the correct proportions */
+}
+
+/* Links take the color of the text around them and lose the underline.
+   Individual links get their own colors later. */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* All headings share one serif font and tight line spacing.
+   margin: 0 removes the default gaps so we control spacing ourselves. */
+h1, h2, h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.15;
+    margin: 0;
+}
