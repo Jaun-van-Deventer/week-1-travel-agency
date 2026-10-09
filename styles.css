@@ -282,3 +282,21 @@ h1, h2, h3 {
     margin: 0;
     font-size: 1.15rem;
 }
+
+/* ===== Footer ===== */
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space);
+    padding: 2.5rem var(--page-pad);
+    background: var(--color-ink);
+    color: var(--color-sand);
+}
+
+.footer-logo {
+    font-family: Georgia, serif;
+    font-size: 1.4rem;
+}
