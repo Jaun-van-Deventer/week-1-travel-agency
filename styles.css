@@ -122,11 +122,10 @@ h1, h2, h3 {
     min-height: 34rem;
     padding: 4rem var(--page-pad);
     color: var(--color-white);
-/* TODO: replace with a real photo later, for example:
-    background: linear-gradient(rgba(11,79,108,.55), rgba(11,79,108,.55)),
-    url("images/hero.jpg") center / cover;
-    The gradient darkens the photo so the white text stays readable. */
-    background: var(--color-ocean);
+    background:
+        linear-gradient(rgba(11, 79, 108, 0.55), rgba(11, 79, 108, 0.55)),
+        url("images/hero.jpg") center / cover,
+        var(--color-ocean);
 }
 
 .hero-content {
@@ -191,19 +190,19 @@ h1, h2, h3 {
     overflow: hidden;
 }
 
-/* TODO: replace each colour with a real photo later, for example:
-   background: url("images/santorini.jpg") center / cover; */
 .card-img {
     height: 11.25rem;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--color-ocean);   /* fallback if a photo fails to load */
 }
 
-/* Placeholder backgrounds for each tour location */
-.img-santorini { background: #0b4f6c; }
-.img-kyoto     { background: #7a3b1d; }
-.img-patagonia { background: #2f5d3a; }
-.img-morocco   { background: #8a3f17; }
-.img-iceland   { background: #3c4f66; }
-.img-bali      { background: #1f6b5c; }
+.img-santorini { background-image: url("images/santorini.jpg"); }
+.img-kyoto     { background-image: url("images/kyoto.jpg"); }
+.img-patagonia { background-image: url("images/patagonia.jpg"); }
+.img-morocco   { background-image: url("images/morocco.jpg"); }
+.img-iceland   { background-image: url("images/iceland.jpg"); }
+.img-bali      { background-image: url("images/bali.jpg"); }
 
 .card-body {
     padding: 1.5rem;
