@@ -11,20 +11,20 @@ A single-page website for a fictional small-group travel agency, built for my pr
 
 ## Requirements checklist
 
-- [ ] Single page, plain HTML5/CSS3, no frameworks
-- [ ] Semantic landmarks, one `h1`, working nav links
-- [ ] `box-sizing: border-box` applied globally
-- [ ] Own CSS variables for colors
-- [ ] Flexbox used for real layout
-- [ ] Grid used for real layout
-- [ ] Responsive, with no horizontal scroll on phone, tablet or desktop
+- [X] Single page, plain HTML5/CSS3, no frameworks
+- [X] Semantic landmarks, one `h1`, working nav links
+- [X] `box-sizing: border-box` applied globally
+- [X] Own CSS variables for colors
+- [X] Flexbox used for real layout
+- [X] Grid used for real layout
+- [X] Responsive, with no horizontal scroll on phone, tablet or desktop
 
 ## Project structure
 
 ```
 index.html   page markup
 styles.css   all styles
-images/      photos (added later)
+images/      photos 
 ```
 
 ## Running it
