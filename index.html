@@ -134,11 +134,44 @@
 
     </main>
 
-    <!-- Footer-->
     <footer class="site-footer">
-        <span class="footer-logo">Wayfarer</span>
-        <span>hello@wayfarer.example</span>
-        <span>&copy; 2026 Wayfarer Travel</span>
+
+        <!-- Top part: columns of information (a Grid container) -->
+        <div class="footer-grid">
+
+        <div class="footer-brand">
+            <p class="footer-logo">Wayfarer</p>
+            <p>Small-group trips led by local guides. Slower pace, fewer crowds, better stories.</p>
+        </div>
+
+        <!-- A second <nav> landmark, so it gets its own aria-label to tell it apart from the main one -->
+        <nav aria-label="Footer">
+            <h2>Explore</h2>
+            <ul>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#plan">Plan your trip</a></li>
+            <li><a href="#top">Back to top</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <h2>Contact</h2>
+            <!-- <address> is the semantic tag for contact details -->
+            <address>
+            <a href="mailto:hello@wayfarer.example">hello@wayfarer.example</a><br>
+            Open Monday to Friday, 9:00 to 17:00
+            </address>
+        </div>
+
+        </div>
+
+        <!-- Bottom bar: copyright on one side, project note on the other (Flexbox) -->
+        <div class="footer-bottom">
+        <p>&copy; 2026 Wayfarer Travel</p>
+        <p>Fictional agency made for a school project. Photo credits are in the README.</p>
+        </div>
+
     </footer>
 
     <!-- Back to top link -->
