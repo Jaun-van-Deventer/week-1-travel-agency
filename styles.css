@@ -300,3 +300,10 @@ h1, h2, h3 {
     font-family: Georgia, serif;
     font-size: 1.4rem;
 }
+
+/* ===== Focus Styles ===== */
+
+a:focus-visible {
+    outline: 3px solid var(--color-sunset);
+    outline-offset: 3px;
+}
