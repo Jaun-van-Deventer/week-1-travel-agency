@@ -1,13 +1,13 @@
 /* ===== Variables ===== */
 
 :root {
-  --color-ocean: #0b4f6c;    /* main brand blue */
-  --color-sand: #f6efe4;     /* page background */
-  --color-sunset: #e8743b;   /* accent for buttons and the CTA band */
-  --color-ink: #1d2a33;      /* main text color */
+    --color-ocean: #0b4f6c;    /* main brand blue */
+    --color-sand: #f6efe4;     /* page background */
+    --color-sunset: #e8743b;   /* accent for buttons and the CTA band */
+    --color-ink: #1d2a33;      /* main text color */
     --color-white: #ffffff;
-  --radius: 12px;            /* shared corner rounding for cards and buttons */
-  --space: 1rem;             /* shared gap size */
+    --radius: 12px;            /* shared corner rounding for cards and buttons */
+    --space: 1rem;             /* shared gap size */
     --page-pad: clamp(1rem, 5vw, 4rem);
 }
 
@@ -152,7 +152,7 @@ h1, h2, h3 {
     gap: var(--space);
 }
 
-/* ===== 5. SECTIONS ===== */
+/* ===== Sections ===== */
 
 /* Shared spacing for every content section */
 .section {
@@ -173,7 +173,7 @@ h1, h2, h3 {
 
 .section-intro {
     margin: 0 0 3rem;
-    max-width: 36rem;          /* keeps the line length readable */
+    max-width: 36rem;
 }
 
 
@@ -191,7 +191,8 @@ h1, h2, h3 {
     overflow: hidden;
 }
 
-
+/* TODO: replace each colour with a real photo later, for example:
+   background: url("images/santorini.jpg") center / cover; */
 .card-img {
     height: 11.25rem;
 }
@@ -223,4 +224,31 @@ h1, h2, h3 {
 .card-meta strong {
     font-size: 1.25rem;
     color: var(--color-ocean);
+}
+
+/* ===== Testimonials Section ===== */
+
+.quote-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17.5rem), 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.quote {
+    margin: 0;
+    padding: 2rem;
+    background: var(--color-sand);
+    border-radius: var(--radius);
+}
+
+.quote blockquote {
+    margin: 0 0 1.25rem;
+    font-family: Georgia, serif;
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+.quote figcaption {
+    font-size: 0.95rem;
 }
