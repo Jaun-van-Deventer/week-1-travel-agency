@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@theme {
+  --color-ocean: #0b4f6c;
+  --color-sand: #f6efe4;
+  --color-sunset: #e8743b;
+  --color-ink: #1d2a33;
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --page-pad: clamp(1rem, 5vw, 4rem);
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-sand font-sans text-[1.0625rem] leading-normal text-ink; }
+  h1, h2, h3 { @apply font-serif leading-[1.15]; }
+  a:focus-visible { outline: 3px solid var(--color-sunset); outline-offset: 3px; }
+}
