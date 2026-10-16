@@ -1,12 +1,17 @@
-import './App.css'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import Footer from './components/Footer'
+import BackToTop from './components/BackToTop'
 
-function App() {
-
+export default function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold text-blue-600">Tailwind works</h1>
+      <Header />
+      <main>
+        <Hero />
+      </main>
+      <Footer />
+      <BackToTop />
     </>
   )
 }
-
-export default App
