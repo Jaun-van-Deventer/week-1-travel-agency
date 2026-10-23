@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/api/:path*",
+            "destination": "https://week-1-travel-agency.onrender.com/api/:path*"
+        }
+    ]
+}
