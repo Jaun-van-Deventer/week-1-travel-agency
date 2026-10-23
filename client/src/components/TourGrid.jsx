@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react'
 import TourCard from './TourCard'
 import CategoryFilter from './CategoryFilter'
 
-const API_URL = import.meta.env.VITE_API_URL
-
 export default function TourGrid() {
     const [tours, setTours] = useState([])
     const [status, setStatus] = useState('loading') // 'loading' | 'error' | 'ready'
@@ -14,7 +12,7 @@ export default function TourGrid() {
 
         async function loadTours() {
             try {
-                const res = await fetch(`${API_URL}/api/tours`, { signal: controller.signal })
+                const res = await fetch('/api/tours', { signal: controller.signal })
                 if (!res.ok) throw new Error(`Request failed: ${res.status}`)
                 setTours(await res.json())
                 setStatus('ready')
